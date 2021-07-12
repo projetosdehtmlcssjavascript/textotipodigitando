@@ -1,0 +1,44 @@
+/* 
+ CSS version 1.0
+ Código feito 12/07/2021 ás 08:51
+*/
+
+
+body{
+   
+    margin:0px;
+}
+
+.container{
+  width:100vw;
+  height:100vh;
+  background: black;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;    
+}
+.box{
+    width:300px;
+    height:300px;
+    background:#fff;
+}
+h1{
+    color:white;
+    overflow: hidden;
+    border-right:.15em solid white;
+    white-space: nowrap;
+    margin:0 auto;
+    letter-spacing:.15em;
+    animation:  typing 3.5s steps(40,end),
+                blink-caret.75s step-end infinite;
+}
+
+@keyframes typing{
+    from{width:0} to {width:100%}
+}
+
+@keyframes blink-caret{
+    from,to{border-color: transparent}
+    50%{border-color:white;}
+}
